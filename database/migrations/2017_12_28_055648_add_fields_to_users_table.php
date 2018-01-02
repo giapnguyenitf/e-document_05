@@ -24,7 +24,7 @@ class AddFieldsToUsersTable extends Migration
             $table->string('phone')->nullable();
             $table->boolean('gender')->nullable();
             $table->string('avatar')->nullable();
-            $table->integer('avaibale_coin')->default(0);
+            $table->integer('avaiable_coin')->default(0);
             $table->integer('free_download')->default(3);
             $table->integer('number_illegal')->default(0);
             $table->boolean('is_ban')->default(false);
