@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 
 <head>
     <meta charset="utf-8">
@@ -84,7 +84,7 @@
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="logo pull-left">
-                            <a href="/">
+                            <a href="{{ route('home') }}">
                                 <img src="images/home/logo.png" alt="" />
                             </a>
                         </div>
@@ -103,17 +103,40 @@
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#">
-                                         <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> giapnguyen
-                                    </a>
+                                   @guest
+                                        <a href="{{ route('login') }}">
+                                            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> @lang('common.login')
+                                        </a>
+                                   @else
+                                        <a href="">
+                                            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> giapnguyen
+                                        </a>
+                                   @endguest
                                     <div class="dropdown">
                                         <a class="dropdown dropdown-toggle" data-toggle="dropdown">@lang('common.account_and_collection') <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown-item"><a href=""><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
-                                            <li class="dropdown-item"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
-                                            <li class="dropdown-item"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> @lang('common.account_favorite')</a></li>
-                                            <li class="dropdown-item"><a href="#"><i class="fa fa-file" aria-hidden="true"></i> @lang('common.account_uploaded')</a></li>
-                                        </ul>
+                                        @guest
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i> @lang('common.sign_in_with_google')</a></li>
+                                                <li class="dropdown-item"><a href=""><i class="fa fa-google" aria-hidden="true"></i> @lang('common.sign_in_with_facebook')</a></li>
+                                                <hr>
+                                                <li class="dropdown-item"><a href="{{ route('register') }}">@lang('common.register')</a></li>
+                                                <li class="dropdown-item"><a href="{{ route('password.request') }}">@lang('common.forgot_password')</a></li>
+                                            </ul>
+                                        @else
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a href=""><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
+                                                <li class="dropdown-item"><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
+                                                <li class="dropdown-item"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> @lang('common.account_favorite')</a></li>
+                                                <li class="dropdown-item"><a href="#"><i class="fa fa-file" aria-hidden="true"></i> @lang('common.account_uploaded')</a></li>
+                                                <li class="dropdown-item">
+                                                    <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                                        <i class="fa fa-sign-out" aria-hidden="true"></i> @lang('common.logout')
+                                                    </a>
+                                                </li>
+                                                {{ Form::open(['route' => 'logout', 'method' => 'POST', 'id' => 'logout-form']) }}
+                                                {{ Form::close() }}
+                                            </ul>
+                                        @endguest
                                     </div>
                                 </li>
                             </ul>
