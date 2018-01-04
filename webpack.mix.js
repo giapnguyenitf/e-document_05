@@ -12,4 +12,12 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .copy('resources/assets/css/style.css', 'public/css/style.css')
+   .copy('resources/assets/css/', 'public/css/')
+   .copy('resources/assets/images/', 'public/images/')
+   .copy('node_modules/font-awesome/fonts/', 'public/fonts')
+   .sass('node_modules/font-awesome/scss/font-awesome.scss', 'public/css')
+   .copy('node_modules/bootstrap/dist/css/bootstrap.css', 'public/css/')
+   .copy('node_modules/bootstrap/dist/js/bootstrap.js', 'public/js/')
+   .copy('node_modules/jquery/dist/jquery.js', 'public/js');
