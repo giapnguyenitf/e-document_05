@@ -9,7 +9,6 @@
                         <span class="badge pull-right">
                             <i class="fa fa-plus"></i>
                         </span>
-                        Công nghệ thông tin
                     </a>
                 </h4>
             </div>
@@ -17,19 +16,7 @@
                 <div class="panel-body">
                     <ul>
                         <li>
-                            <a href="#">Phần cứng </a>
-                        </li>
-                        <li>
-                            <a href="#">Quản trị mạng </a>
-                        </li>
-                        <li>
-                            <a href="#">Cơ sở dữ liệu </a>
-                        </li>
-                        <li>
-                            <a href="#">An ninh bảo mật</a>
-                        </li>
-                        <li>
-                            <a href="#">Kỹ thuật lập trình </a>
+                            <a href="#"></a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +30,6 @@
                         <span class="badge pull-right">
                             <i class="fa fa-plus"></i>
                         </span>
-                        Tiếng anh-Ngoại ngữ
                     </a>
                 </h4>
             </div>
@@ -51,17 +37,9 @@
                 <div class="panel-body">
                     <ul>
                         <li>
-                            <a href="#">Tiếng anh giao tiếp</a>
+                            <a href="#"></a>
                         </li>
-                        <li>
-                            <a href="#">IELTS</a>
-                        </li>
-                        <li>
-                            <a href="#">TOEIC</a>
-                        </li>
-                        <li>
-                            <a href="#">Ngữ pháp tiếng anh</a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -70,14 +48,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a href="#">Văn bản luật</a>
-                </h4>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a href="#">Khoa học xã hội</a>
+                    <a href="#"></a>
                 </h4>
             </div>
         </div>
@@ -91,31 +62,7 @@
             <ul class="nav nav-pills nav-stacked">
                 <li>
                     <a href="#">
-                        <span class="pull-right"></span>Acne</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="pull-right"></span>Grüne Erde</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="pull-right"></span>Albiro</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="pull-right"></span>Ronhill</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="pull-right"></span>Oddmolly</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="pull-right"></span>Boudestijn</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="pull-right"></span>Rösch creative culture</a>
+                        <span class="pull-right"></span></a>
                 </li>
             </ul>
         </div>

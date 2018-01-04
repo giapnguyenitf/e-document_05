@@ -37,5 +37,6 @@
         'document' => 'Document',
         'e-document' => 'E-Document',
         'copyright_all' => 'Copyright © 2018 E-DOCUMENT Inc. All rights reserved.',
+        'address' => '255-257 Hùng Vương, Vĩnh Trung, Thanh Khê, Đà Nẵng, Vietnam',
     ];
 ?>

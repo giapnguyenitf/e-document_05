@@ -17,7 +17,7 @@
                     <div class="col-sm-3">
                         <div class="address">
                             <img src="images/home/map.png" alt="" />
-                            <p>255-257 Hùng Vương, Vĩnh Trung, Thanh Khê, Đà Nẵng, Vietnam</p>
+                            <p>@lang('common.address')</p>
                         </div>
                     </div>
                 </div>
@@ -49,18 +49,6 @@
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
                                     <a href="#">@lang('common.home')</a>
-                                </li>
-                                <li>
-                                    <a href="#">Kinh tế-Tài chính</a>
-                                </li>
-                                <li>
-                                    <a href="#">Văn học-Đời sống</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tiếng anh-Ngoại ngữ</a>
-                                </li>
-                                <li>
-                                    <a href="#">Kỹ năng mềm</a>
                                 </li>
                             </ul>
                         </div>
