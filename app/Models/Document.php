@@ -3,9 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Storage;
 
 class Document extends Model
-{
+{ 
     protected $fillable = [
         'user_id',
         'category_id',
@@ -18,6 +19,11 @@ class Document extends Model
         'views',
         'is_illegal',
     ];
+
+    public function getThumbnailPathAttribute()
+    {
+        return Storage::url('thumbnails/'. $this->thumbnail);
+    }
 
     public function favorites()
     {
@@ -43,4 +49,5 @@ class Document extends Model
     {
         return $this->belongsTo(User::class);
     }
+
 }
