@@ -4,12 +4,85 @@ body{
 #login-box{
     margin-top: 100px;
 }
-#login-box .input-group{
-    margin-top: 30px;
+#login-box .panel-heading{
+    text-align: center;
 }
-#login-box .btn{
-    margin-top: 30px;
+#login-box .panel-heading a{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FE980F;
+    text-decoration: none;
 }
-.glyphicon.glyphicon-user{
-    top: 0px !important;
+
+#register-box{
+    margin-top: 100px;
+}
+#register-box .panel-heading{
+    text-align: center;
+}
+#register-box .panel-heading a{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FE980F;
+    text-decoration: none;
+}
+#login-box input{
+    border-radius: 0px;
+}
+#login-box button{
+    border-radius: 0px;
+    background: #FE980F;
+    border: 0px;
+}
+
+#register-box input{
+    border-radius: 0px;
+}
+#register-box .btn{
+    border-radius: 0px;
+    background: #FE980F;
+    border: 0px;
+}
+#reset-box{
+    margin-top: 100px;
+}
+#link-option{
+    margin-top: 10px;
+}
+#link-option a{
+    color: #666;
+    text-decoration: none;
+}
+#login-link{
+    margin-top: 10px;
+}
+#login-link a{
+    color: #666;
+    text-decoration: none;
+}
+#remember-me{
+    color: #666;
+}
+#reset-box{
+    margin-top: 100px;
+}
+#reset-box .input-group{
+    margin-bottom: 20px;
+}
+#reset-box .panel-heading{
+    text-align: center;
+}
+#reset-box .panel-heading a{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FE980F;
+    text-decoration: none;
+}
+#reset-box .btn-primary{
+    background: #FE980F !important;
+    border-radius: 0px !important;
+    border: 0px solid #c1c1c1;
+}
+#reset-box input{
+    border-radius: 0px;
 }

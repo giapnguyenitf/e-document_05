@@ -38,5 +38,10 @@
         'e-document' => 'E-Document',
         'copyright_all' => 'Copyright © 2018 E-DOCUMENT Inc. All rights reserved.',
         'address' => '255-257 Hùng Vương, Vĩnh Trung, Thanh Khê, Đà Nẵng, Vietnam',
+        'sign_in_with_facebook' => 'Sign in with Facebook',
+        'sign_in_with_google' => 'Sign in with Google',
+        'forgot_password' => 'Forgot password!',
+        'remember_me' => 'Remember me!',
+        'username' => 'Username',
     ];
 ?>
