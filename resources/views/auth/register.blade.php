@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 @extends('layouts.head')
 @section('content')
     <div class="container">
@@ -6,7 +5,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <div class="panel panel-default" id="register-box">
                     <div class="panel-heading">
-                        <a href="{{ route('home') }}">@lang('common.e-document')</a>
+                        <a href="{{ route('index') }}">@lang('common.e-document')</a>
                     </div>
 
                     <div class="panel-body">

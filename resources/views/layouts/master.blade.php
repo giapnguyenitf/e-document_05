@@ -17,7 +17,9 @@
     @yield('css')
 </head>
 <body>
+    @include('layouts.header')
     @yield('content')
+    @include('layouts.footer')
     {{ Html::script('js/jquery.js') }}
     {{ Html::script('js/bootstrap.js') }}
     @yield('javascript')
