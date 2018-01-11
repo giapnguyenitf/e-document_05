@@ -12,7 +12,7 @@
                 </div>
                 <div class="panel-body">
                     @include('messages.notifications')
-                    {{ Form::open(['route' => 'login', 'files' => true,'class' => 'form-horizontal', 'id' => 'profile-box', 'method' => 'POST', ]) }}
+                    {{ Form::open(['route' => 'profile.store', 'files' => true,'class' => 'form-horizontal', 'id' => 'profile-box', 'method' => 'POST', ]) }}
                         <div class="form-group row{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label class="col-md-3 control-label" for="name">@lang('label.name')</label>
                             <div class="col-md-9">
@@ -123,7 +123,6 @@
                         
                     {{ Form::close() }}
 
-                    @include('messages.notifications')
                     {{ Form::open(['route' => 'login', 'class' => 'form-horizontal', 'method' => 'POST',  'id' => 'change-password-box']) }}
                         <div class="form-group row{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label class="col-md-3 control-label" for="">@lang('label.password')</label>
