@@ -55,4 +55,9 @@ class User extends Model
     {
         return $this->hasMany(Friendship::class);
     }
+
+    public function setPasswordHashAttribute($value)
+    {
+        $this->password = bcrypt($value);
+    }
 }

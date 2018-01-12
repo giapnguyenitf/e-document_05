@@ -103,9 +103,9 @@
                                         </ul>
                                     @else
                                         <ul class="dropdown-menu">
-                                            <li class="dropdown-item"><a href="{{ route('upload') }}"><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
-                                            <li class="dropdown-item"><a href="{{ route('profile') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
-                                            <li class="dropdown-item"><a href="{{ route('favorites') }}"><i class="fa fa-heart" aria-hidden="true"></i> @lang('common.account_favorite')</a></li>
+                                            <li class="dropdown-item"><a href=""><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
+                                            <li class="dropdown-item"><a href="{{ route('profile.index') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
+                                            <li class="dropdown-item"><a href=""><i class="fa fa-heart" aria-hidden="true"></i> @lang('common.account_favorite')</a></li>
                                             <li class="dropdown-item"><a href=""><i class="fa fa-btc" aria-hidden="true"></i> @lang('label.buy_coins')</a></li>
                                             <li class="dropdown-item">
                                                 <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
