@@ -9,7 +9,7 @@
                 </div>
                 <div class="panel-body">
                     @include('messages.notifications')
-                    {{ Form::open(['route' => 'login', 'files' => true, 'enctype' => 'multipart/form-data', 'class' => 'form-horizontal', 'id' => 'profile-box', 'method' => 'POST', ]) }}
+                    {{ Form::open(['route' => 'document.store', 'files' => true, 'enctype' => 'multipart/form-data', 'class' => 'form-horizontal', 'id' => 'profile-box', 'method' => 'POST', ]) }}
                         <div class="form-group row{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label class="col-md-3 control-label" for="name">@lang('label.document_name')</label>
                             <div class="col-md-9">
