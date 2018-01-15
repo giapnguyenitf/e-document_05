@@ -123,7 +123,7 @@
                         
                     {{ Form::close() }}
 
-                    {{ Form::open(['route' => 'login', 'class' => 'form-horizontal', 'method' => 'POST',  'id' => 'change-password-box']) }}
+                    {{ Form::open(['route' => 'password.update', 'class' => 'form-horizontal', 'method' => 'POST',  'id' => 'change-password-box']) }}
                         <div class="form-group row{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label class="col-md-3 control-label" for="">@lang('label.password')</label>
                             <div class="col-md-9">
