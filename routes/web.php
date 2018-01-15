@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('user/profile', 'UserController');
 
+Route::post('user/update-pwd', 'UpdatePasswordController@update')->name('password.update');
+
