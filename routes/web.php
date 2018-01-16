@@ -23,3 +23,7 @@ Route::resource('user/profile', 'UserController');
 
 Route::post('user/update-pwd', 'UpdatePasswordController@update')->name('password.update');
 
+Route::resource('user/document', 'DocumentController');
+
+Route::get('get/categories', 'AjaxController@getCategories');
+

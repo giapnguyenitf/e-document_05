@@ -38,5 +38,9 @@
         'member' => 'Member',
         'search' => 'Search',
         'uploaded' => 'Uploaded',
+        'thumbnail' => 'Thumbnail',
+        'choose_file' => 'Choose file',
+        'upload' => 'Upload',
+        'specialize' => 'Specialize',
     ];
 ?>
