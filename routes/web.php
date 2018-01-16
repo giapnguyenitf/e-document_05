@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 Auth::routes();
 
@@ -27,3 +25,4 @@ Route::resource('user/document', 'DocumentController');
 
 Route::get('get/categories', 'AjaxController@getCategories');
 
+Route::get('/category/{id}', 'CategoryDocumentController@index')->name('category');

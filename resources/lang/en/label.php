@@ -42,5 +42,11 @@
         'choose_file' => 'Choose file',
         'upload' => 'Upload',
         'specialize' => 'Specialize',
+        'new_documents' => 'New Documents',
+        'all_documents' => 'All Documents',
+        'views' => 'Views',
+        'downloads' => 'Downloads',
+        'upload_by' => 'Upload by',
+        'size' => 'Size(MB)',
     ];
 ?>
