@@ -821,7 +821,6 @@ h2.title:before{
   margin-left: -5px;
 }
 
-
 .padding-right {
   padding-right: 0;
 }
@@ -829,7 +828,6 @@ h2.title:before{
 .features_items{
 	overflow:hidden;
 }
-
 
 h2.title {
   color: #FE980F;
@@ -867,6 +865,18 @@ h2.title {
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
+}
+.productinfo .product_name{
+  color: #FE980F;
+}
+.productinfo .product_name h5
+{
+  height: 41px;
+  overflow: hidden;
+  line-height: 1.4;
+  font-family:  Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+
 }
 .product-overlay h2{
 	color: #fff;
@@ -2513,4 +2523,53 @@ h2.title {
 
 .contact-info .social-networks ul li a:hover{
   color: #FE980F;
+}
+
+/* document items */
+.document_item
+{
+  padding: 10px;
+}
+.items
+{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #f1f1f1;
+}
+.items:hover{
+  box-shadow: 1px 1px 1px 1px rgba(68, 65, 65, 0.2);
+}
+.document_thumbnail
+{
+  height: 150px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.document_info .document_name a
+{
+  text-align: left;
+  text-transform: capitalize;
+  color: #4a4a4a;
+  font-size: 16px;
+  text-decoration: none;
+}
+.document_more_detail div{
+  display: -webkit-inline-box;
+  padding-right: 30px;
+}
+.document_more_detail div a i
+{
+  color: #fe980f;
+}
+.document_more_detail div a 
+{
+  color: #333;
+}
+.document_info .document_description
+{
+  padding: 10px 0px 10px 0;
+}
+.document_category a
+{
+  color: #fe980f;
 }
