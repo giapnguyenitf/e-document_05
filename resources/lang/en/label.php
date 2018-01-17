@@ -48,5 +48,17 @@
         'downloads' => 'Downloads',
         'upload_by' => 'Upload by',
         'size' => 'Size(MB)',
+        'friends' => 'Friends',
+        'uploads' => 'Uploads',
+        'mail' => 'E-mail',
+        'recent_upload' => 'Recent upload',
+        'request_friends_sent' => 'Request friends sent',
+        'delete_request' => 'Delete request',
+        'accept_request_friends' => 'Accept request',
+        'add_friends' => 'Add friends',
+        'delete_friends' => 'Delete friends',
+        'new_friends_request' => 'New friends request !',
+        'messages_new_friends' => 'New friends request from user: ',
+        'friend_requests' => 'Friend requests',
     ];
 ?>

@@ -87,12 +87,12 @@
                                         <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> @lang('common.login')
                                     </a>
                                 @else
-                                    <a href="">
+                                    <a href="{{ route('profile.index') }}">
                                         <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> {{ Auth::user()->name }}
                                     </a>
                                 @endguest
                                 <div class="dropdown">
-                                    <a class="dropdown dropdown-toggle" data-toggle="dropdown">@lang('common.account_and_collection') <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    <a class="dropdown dropdown-toggle" data-toggle="dropdown">@lang('common.account_and_collection')&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
                                     @guest
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item"><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i> @lang('common.sign_in_with_google')</a></li>
@@ -105,8 +105,8 @@
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item"><a href="{{ route('document.index') }}"><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
                                             <li class="dropdown-item"><a href="{{ route('profile.index') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
-                                            <li class="dropdown-item"><a href=""><i class="fa fa-heart" aria-hidden="true"></i> @lang('common.account_favorite')</a></li>
                                             <li class="dropdown-item"><a href=""><i class="fa fa-btc" aria-hidden="true"></i> @lang('label.buy_coins')</a></li>
+                                            <li class="dropdown-item"><a href="{{ route('profile.index') }}"><i class="fa fa-user-plus" aria-hidden="true"></i> @lang('label.friend_requests')&nbsp;&#40;<span class="friend_requests">0</span>&#41;</a></li>
                                             <li class="dropdown-item">
                                                 <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                                     <i class="fa fa-sign-out" aria-hidden="true"></i> @lang('common.logout')

@@ -62,7 +62,7 @@
                                                 <div><a><i class="fa fa-file"></i> @lang('label.file_type'): {{ $document->file_type }}</a></div>
                                                 <div><a><i class="fa fa-eye"></i>  @lang('label.views'): {{ $document->views }}</a></div>
                                                 <div><a><i class="fa fa-cloud-download"></i>  @lang('label.downloads'): {{ $document->downloads }}</a></div>
-                                                <div><a href=""><i class="fa fa-user"></i> @lang('label.upload_by'): {{$document->user->name}}</a></div>
+                                                <div><a href="{{ route('showUser', $document->user->id) }}"><i class="fa fa-user"></i> @lang('label.upload_by'): {{$document->user->name}}</a></div>
                                             </div>
                                             <div class="document_description">{{ $document->description }}</div>
                                             <div class="document_category"><span>@lang('label.category'): </span> <a href="{{ route('category',$document->Category->id) }}">{{ $document->Category->name }}</a></div>
@@ -81,4 +81,7 @@
             </div>
         </div>
     </section>
+@endsection
+@section('javascript')
+    {{ Html::script('js/home.js') }}
 @endsection
