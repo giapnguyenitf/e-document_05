@@ -382,3 +382,45 @@ h5{
 .friends{
     color: #c90808;
 }
+/* friendlist */
+.friends-profile{
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 1px 1px rgba(68, 65, 65, 0.2);
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.friends-profile:hover{
+    border-top: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 1px 1px rgba(236, 167, 16, 0.801);
+    margin-right: 10px;
+    margin-top: 18px;
+}
+.friend-avatar{
+    height: 105px;
+    overflow: hidden;
+    margin-left: -15px !important;
+}
+.friend-detail .friend-name{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+}
+.friend-email>i{
+    width: 20px;
+}
+.friend-phone>i{
+    width: 20px;
+}
+.friend-options>.dropdown>.dropdown-toggle>i.fa{
+    width: 20px;
+}
+.paginate-bar{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.no-request h5{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}

@@ -36,4 +36,6 @@ Route::prefix('friend')->group(function () {
     Route::get('add/{id}', 'FriendController@create')->name('addFriend');
     Route::get('delete/{id}', 'FriendController@delete')->name('deleteFriend');
     Route::get('accept/{id}', 'FriendController@update')->name('acceptFriend');
+    Route::get('list', 'FriendController@show')->name('friendsList');
+    Route::get('requests', 'FriendController@showRequests')->name('friendsRequests');
 });
