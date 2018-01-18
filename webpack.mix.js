@@ -21,4 +21,6 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .copy('node_modules/bootstrap/dist/css/bootstrap.css', 'public/css/')
    .copy('node_modules/bootstrap/dist/js/bootstrap.js', 'public/js/')
    .copy('node_modules/jquery/dist/jquery.js', 'public/js')
-   .copy('resources/assets/js/upload.js', 'public/js');
+   .copy('resources/assets/js/upload.js', 'public/js')
+   .copy('resources/assets/js/home.js', 'public/js');
+   

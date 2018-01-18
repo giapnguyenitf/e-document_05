@@ -17,12 +17,23 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('user/profile', 'UserController');
-
-Route::post('user/update-pwd', 'UpdatePasswordController@update')->name('password.update');
-
-Route::resource('user/document', 'DocumentController');
-
-Route::get('get/categories', 'AjaxController@getCategories');
-
 Route::get('/category/{id}', 'CategoryDocumentController@index')->name('category');
+
+Route::get('info/{id}', 'ShowUserController@index')->name('showUser');
+
+Route::prefix('get')->group(function () {
+    Route::get('categories', 'AjaxController@getCategories');
+    Route::get('request-friend', 'AjaxController@getRequestFriend');
+});
+
+Route::prefix('user')->group(function () {
+    Route::resource('profile', 'UserController');
+    Route::post('update-pwd', 'UpdatePasswordController@update')->name('password.update');
+    Route::resource('document', 'DocumentController');
+});
+
+Route::prefix('friend')->group(function () {
+    Route::get('add/{id}', 'FriendController@create')->name('addFriend');
+    Route::get('delete/{id}', 'FriendController@delete')->name('deleteFriend');
+    Route::get('accept/{id}', 'FriendController@update')->name('acceptFriend');
+});

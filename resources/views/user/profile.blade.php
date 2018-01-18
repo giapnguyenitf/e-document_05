@@ -162,5 +162,6 @@
         {{ Html::script('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js') }}
         {{ Html::script('https://use.fontawesome.com/a6499bd878.js') }}
         {{ Html::script('js/profile.js')}}
+        {{ Html::script('js/home.js') }}
         {{ Html::script('https://maps.googleapis.com/maps/api/js?key=AIzaSyDhXqDwjEfKlCPTNni75UrHRQbkRBjEDc4&libraries=places&callback=initAutocomplete') }}
     @endsection
