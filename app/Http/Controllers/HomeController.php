@@ -31,7 +31,7 @@ class HomeController extends Controller
         ])->orderBy('name', 'asc')->get();
         
         $newDocuments = Document::where('status', config('setting.true'))->orderBy('created_at', 'desc')->take(config('setting.number_new_documents'))->get();
-        $documents = Document::orderBy('created_at', 'desc')->paginate(config('setting.number_per_page'));
+        $documents = Document::where('status', config('setting.true'))->orderBy('created_at', 'desc')->paginate(config('setting.number_per_page'));
 
         return view('home', compact('categories', 'newDocuments', 'documents'));
     }

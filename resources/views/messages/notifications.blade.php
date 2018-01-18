@@ -31,4 +31,19 @@
         {{ Session::get('upload_document_fail') }}
     </div>
 @endif
-
+<!-- download document -->
+@if(Session::has('not_enough_coins'))
+    <div class="alert alert-danger">
+        {{ Session::get('not_enough_coins') }}
+    </div>
+@endif
+@if(Session::has('file_not_found'))
+    <div class="alert alert-danger">
+        {{ Session::get('file_not_found') }}
+    </div>
+@endif
+@if(Session::has('exception'))
+    <div class="alert alert-danger">
+        {{ Session::get('exception') }}
+    </div>
+@endif
