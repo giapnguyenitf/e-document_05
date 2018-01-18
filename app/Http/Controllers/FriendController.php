@@ -60,4 +60,33 @@ class FriendController extends Controller
             return back();
         }
     }
+
+    public function show()
+    {
+        $friends = User::whereIn('id', function ($query) {
+            $query->select('second_user')->from('friendships')
+            ->where(function ($query) {
+                $query->where('first_user', Auth::user()->id)->where('status', config('setting.true'));
+            });
+        })->orWhereIn('id', function ($query) {
+            $query->select('first_user')->from('friendships')
+            ->where(function ($query) {
+                $query->where('second_user', Auth::user()->id)->where('status', config('setting.true'));
+            });
+        })->paginate(config('setting.number_per_page'));
+
+        return view('user.friendsList', compact('friends'));
+    }
+
+    public function showRequests()
+    {
+        $friends_requests = User::whereIn('id', function ($query) {
+            $query->select('first_user')->from('friendships')
+            ->where(function ($query) {
+                $query->where('second_user', Auth::user()->id)->where('status', config('setting.false'));
+            });
+        })->paginate(config('setting.number_per_page'));
+
+        return view('user.friendsRequests', compact('friends_requests'));
+    }
 }

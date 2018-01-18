@@ -19,8 +19,8 @@
                     <li><a href=""><i class="fa fa-cloud-download"></i> @lang('label.downloaded')</a></li>
                     <li><a href=""><i class="fa fa-file"></i> @lang('label.uploaded')</a></li>
                     <li><a href=""><i class="fa fa-btc"></i> @lang('label.buy_coins')</a></li>
-                    <li><a href=""><i class="fa fa-user-plus"></i> @lang('label.friend_requests')</a>&nbsp;&#40;<span class="friend_requests">0</span>&#41;</li>
-                    <li><a href=""><i class="fa fa-users"></i> @lang('label.friends')</a>&nbsp;&#40;<span class="friends">0</span>&#41;</li>
+                    <li><a href="{{ route('friendsRequests') }}"><i class="fa fa-user-plus"></i> @lang('label.friend_requests')</a>&nbsp;&#40;<span class="friend_requests">0</span>&#41;</li>
+                    <li><a href="{{ route('friendsList') }}"><i class="fa fa-users"></i> @lang('label.friends')</a>&nbsp;&#40;<span class="friends">0</span>&#41;</li>
                 </ul>
             </div>
         </div>

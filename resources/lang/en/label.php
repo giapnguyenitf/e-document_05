@@ -60,5 +60,7 @@
         'new_friends_request' => 'New friends request !',
         'messages_new_friends' => 'New friends request from user: ',
         'friend_requests' => 'Friend requests',
+        'no_friends_requests' => 'No Friends Request !',
+        'no_friends' => 'Oh! You have no friends !',
     ];
 ?>
