@@ -39,3 +39,10 @@ Route::prefix('friend')->group(function () {
     Route::get('list', 'FriendController@show')->name('friendsList');
     Route::get('requests', 'FriendController@showRequests')->name('friendsRequests');
 });
+
+Route::prefix('document')->group(function () {
+    Route::get('view/{id}', 'ViewDocumentController@index')->name('viewDocument');
+    Route::get('favorites/{id}', 'ViewDocumentController@favorites')->name('favoritesDocument');
+    Route::get('unfavorites/{id}', 'ViewDocumentController@unFavorites')->name('unFavoritesDocument');
+    Route::get('download/{id}', 'ViewDocumentController@download')->name('downloadDocument');
+});

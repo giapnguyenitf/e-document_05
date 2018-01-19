@@ -424,3 +424,33 @@ h5{
     font-size: 30px;
     font-weight: 600;
 }
+.document-title h5{
+    text-align: left;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #333;
+}
+.document-more-detail div{
+    display: inline;
+    padding-right: 30px;
+}
+.document-statistic div{
+    display: inline;
+    padding-right: 30px;
+}
+.viewer-pdf{
+    margin-bottom: 20px;
+}
+.document-options div{
+    display: inline;
+    padding-right: 20px;
+}
+.document-options{
+    margin-bottom: 20px;
+}
+a{
+    color: #FE980F;
+}
+.user-upload{
+    color: #FE980F;
+}

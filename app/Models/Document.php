@@ -50,4 +50,14 @@ class Document extends Model
     {
         return Storage::url(config('setting.thumbnails'). $this->thumbnail);
     }
+
+    public function getDocumentPathAttribute()
+    {
+        return Storage::url(config('setting.documents_path'). $this->file_name);
+    }
+
+    public function getDownloadLinkAttribute()
+    {
+        return public_path(Storage::url(config('setting.download_path').$this->file_name));
+    }
 }

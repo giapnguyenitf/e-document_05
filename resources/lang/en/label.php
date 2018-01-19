@@ -62,5 +62,9 @@
         'friend_requests' => 'Friend requests',
         'no_friends_requests' => 'No Friends Request !',
         'no_friends' => 'Oh! You have no friends !',
+        'share_by' => 'Share by',
+        'un_favorites' => 'Unfavorites',
+        'browser_not_support_pdf' => 'This browser does not support PDFs. Please download the PDF to view it: ',
+        'download_pdf' => 'Download PDF',
     ];
 ?>

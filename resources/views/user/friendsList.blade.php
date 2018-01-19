@@ -17,7 +17,7 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="friend-detail">
-                                        <div class="friend-name">{{ $friend->name }}</div>
+                                        <div class="friend-name"><a href="{{ route('showUser', $friend->id) }}">{{ $friend->name }}</a></div>
                                         <div class="friend-email"><i class="fa fa-envelope-o"></i>{{ $friend->email }}</div>
                                         <div class="friend-phone"><i class="fa fa-phone"></i>{{ $friend->phone }}</div>
                                     </div>

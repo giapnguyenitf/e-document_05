@@ -841,7 +841,7 @@ h2.title {
 }
 
 .product-image-wrapper{
-	border:1px solid #F7F7F5;
+	border:1px solid #dbd8d8;
 	overflow: hidden;
 	margin-bottom:30px;
 }
@@ -909,9 +909,11 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
-  opacity:;
 }
-
+.product-image-wrapper:hover{
+  box-shadow: 1px 1px 1px 1px rgba(236, 167, 16, 0.801);
+  border: 0px;
+}
 .single-products:hover .product-overlay {
   display:block;
   height:100%;
@@ -2555,7 +2557,7 @@ h2.title {
 }
 .document_more_detail div{
   display: -webkit-inline-box;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 .document_more_detail div a i
 {
