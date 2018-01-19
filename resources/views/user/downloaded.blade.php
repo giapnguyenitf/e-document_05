@@ -11,21 +11,23 @@
                         <table  class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>@lang('label.date')</th>
                                     <th>@lang('label.document_name')</th>
-                                    <th>@lang('label.description')</th>
                                     <th>@lang('label.file_type')</th>
+                                    <th>@lang('label.times')</th>
+                                    <th>@lang('label.date')</th>
                                     <th>@lang('label.detail')</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                                @foreach ($downloaded as $download)
+                                    <tr>
+                                        <td>{{ $download->document->name }}</td>
+                                        <td>{{ $download->document->file_type }}</td>
+                                        <td>{{ $download->number }}</td>
+                                        <td>{{ $download->updated_at->format('d/m/Y') }}</td>
+                                        <td><a href="{{ route('viewDocument', $download->document->id) }}"><i class="fa fa-external-link"></i></a></td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

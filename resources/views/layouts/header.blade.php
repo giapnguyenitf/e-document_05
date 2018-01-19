@@ -105,7 +105,7 @@
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item"><a href="{{ route('document.index') }}"><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
                                             <li class="dropdown-item"><a href="{{ route('profile.index') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
-                                            <li class="dropdown-item"><a href=""><i class="fa fa-btc" aria-hidden="true"></i> @lang('label.buy_coins')</a></li>
+                                            <li class="dropdown-item"><a href="{{ route('user.depoisit') }}"><i class="fa fa-btc" aria-hidden="true"></i> @lang('label.buy_coins')</a></li>
                                             <li class="dropdown-item"><a href="{{ route('friendsRequests') }}"><i class="fa fa-user-plus" aria-hidden="true"></i> @lang('label.friend_requests')&nbsp;&#40;<span class="friend_requests">0</span>&#41;</a></li>
                                             <li class="dropdown-item">
                                                 <a href="{{ route('logout') }}"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

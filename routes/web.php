@@ -30,6 +30,10 @@ Route::prefix('user')->group(function () {
     Route::resource('profile', 'UserController');
     Route::post('update-pwd', 'UpdatePasswordController@update')->name('password.update');
     Route::resource('document', 'DocumentController');
+    Route::get('uploaded', 'HistoryController@showUploaded')->name('user.uploaded');
+    Route::get('downloaded', 'HistoryController@showDownloaded')->name('user.downloaded');
+    Route::get('favorites', 'HistoryController@showFavorites')->name('user.favorites');
+    Route::get('depoisit', 'DepoisitController@index')->name('user.depoisit');
 });
 
 Route::prefix('friend')->group(function () {
