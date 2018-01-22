@@ -8,6 +8,7 @@
                     <h5>@lang('label.uploaded')</h5>
                 </div>
                 <div class="panel-body">
+                    @include('messages.notifications')
                     <table  class="table table-bordered">
                         <thead>
                             <tr>
@@ -42,7 +43,17 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <a href="{{ route('viewDocument', $upload->id) }}"><i class="fa fa-external-link"></i></a>
+                                        <div class="dropdown">
+                                            <a class="dropdown dropdown-toggle" data-toggle="dropdown">@lang('label.options') <i class="fa fa-caret-down"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a href="{{ route('viewDocument', $upload->id) }}"><i class="fa fa-external-link"></i> @lang('label.detail')</a></li>
+                                                <li class="dropdown-item">
+                                                    {{ Form::open(['route' => ['document.destroy', $upload->id], 'method' => 'DELETE'] ) }}
+                                                        {{ Form::button('<i  class="fa fa-trash"></i>&nbsp;'.trans('label.delete_document'), ['type' => 'submit', 'class' => 'btn btn-defaul btn-sm', 'id' => 'bt-delete-document']) }}
+                                                    {{ Form::close() }}
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

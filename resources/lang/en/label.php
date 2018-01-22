@@ -80,5 +80,6 @@
         'coin' => 'Coin',
         'depoisit' => 'Depoisit',
         'comment' => 'Comment',
+        'delete_document' => 'Delete document',
     ];
 ?>

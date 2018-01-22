@@ -24,6 +24,11 @@ Route::get('info/{id}', 'ShowUserController@index')->name('showUser');
 Route::prefix('get')->group(function () {
     Route::get('categories', 'AjaxController@getCategories');
     Route::get('request-friend', 'AjaxController@getRequestFriend');
+    Route::get('comments/{id}', 'AjaxController@getComments');
+});
+
+Route::prefix('post')->group(function () {
+    Route::post('comment', 'AjaxController@saveComment');
 });
 
 Route::prefix('user')->group(function () {
