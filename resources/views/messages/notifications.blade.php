@@ -47,3 +47,14 @@
         {{ Session::get('exception') }}
     </div>
 @endif
+<!-- delete document -->
+@if(Session::has('delete_document_success'))
+    <div class="alert alert-success">
+        {{ Session::get('delete_document_success') }}
+    </div>
+@endif
+@if(Session::has('delete_document_fail'))
+    <div class="alert alert-danger">
+        {{ Session::get('delete_document_fail') }}
+    </div>
+@endif

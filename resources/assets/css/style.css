@@ -498,3 +498,41 @@ a{
 .btc-icon .fa-btc {
     color: #FE980F;
 }
+.comment-header div {
+    float: left;
+    padding-right: 10px;
+}
+.comment-header div h5 {
+    line-height: 0.5;
+}
+.avatar-user-comment {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #c1c1c1;
+    overflow: hidden;
+}
+.comment-row .row {
+    margin-top: 20px;
+}
+.comment-date {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.comment-date span {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #cacaca;
+}
+.box-comment {
+    margin-bottom: 10px;
+}
+.comment-line {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+}
+#bt-delete-document {
+    background: transparent;
+    color: #c90808;
+}

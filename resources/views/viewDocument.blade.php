@@ -12,7 +12,7 @@
                            <div class="row">
                                 <div class="col-md-12">
                                     <div class="document-title">
-                                        <h5>{{ $document->name }}</h5>
+                                        <h5 id="{{ $document->id }}">{{ $document->name }}</h5>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -69,6 +69,55 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="comment-header">
+                                <div><i class="fa fa-commenting-o fa-2x"></i></div>
+                                <div><h5>@lang('label.comment')</h5></div>
+                                <div class="line"><hr></div>
+                            </div>
+                            <div class="comment-body">
+                                <input id="user_id" type="hidden" value="{{ Auth::user()->id }}">
+                                <input id="document_id" type="hidden" value="{{ $document->id }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row box-comment">
+                                <div class="col-md-1">
+                                    <div class="avatar-user-comment">
+                                        <img class="img-responsive" src="{{ Storage::url(config('setting.avatar_path').Auth::user()->avatar) }}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="comment-textarea{{ $errors->has('messages') ? ' has-error' : '' }}">
+                                        <form action="" method="post">
+                                            <textarea class="form-control" name="comment_messages" id="comment_messages" rows="2"></textarea>
+                                            <input class="btn btn-primary" type="button" name="bt_comment" id="bt_comment" value="@lang('label.comment')">
+                                        </form>
+                                    </div>
+                                    @if ($errors->has('messages'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('messages') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="comment-row">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+@endsection
+@section('javascript')
+    {{ Html::script('js/comment.js') }}
+    {{ Html::script('js/master.js') }}
 @endsection

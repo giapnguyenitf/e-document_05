@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\UploadDocumentRequest;
 use App\Models\Document;
 use App\Models\Category;
+use App\Models\Comment;
 use App\Traits\UploadFileTrait;
 use App\Traits\NewCategoryTrait;
 use Auth;
@@ -115,6 +116,17 @@ class DocumentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        try
+        {
+            Comment::where('document_id', $id)->delete();
+            Document::where('id', $id)->delete();
+            Session::flash('delete_document_success', trans('messages.delete_document_success'));
+
+            return back();
+        } catch(Exception $e) {
+            Session::flash('delete_document_fail', trans('messages.delete_document_fail'));
+
+            return back();
+        }
     }
 }

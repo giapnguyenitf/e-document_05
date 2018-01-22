@@ -9,5 +9,9 @@
         'not_enough_coins' => 'Oh! You have not enough coins. Please depoisit coins to download document!',
         'file_not_found' => 'File not found. It can be deleted !',
         'exception' => 'Oh! One error has occurred. Please try again later !',
+        'delete_document_success' => 'Delete document success !',
+        'delete_document_fail' => 'Delete document fail !',
+        'success' => 'Success',
+        'fail' => 'Fail',
     ];
 ?>
