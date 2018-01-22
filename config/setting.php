@@ -16,5 +16,12 @@
         'documents_path' => 'documents/',
         'download_path' => 'public/documents/',
         'documents' => '/documents/',
+        'download' => 1,
+        'view' => 2,
+        'zero' => 0,
+        'viettel' => 1,
+        'mobiphone' => 2,
+        'vnd' => ' VND',
+        'images_path' => 'images/home/',
     ];
 ?>

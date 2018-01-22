@@ -7,11 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Coin extends Model
 {
     protected $fillable = [
-        'cost_per_coin',
+        'cost',
+        'coins_receive',
+        'type',
     ];
 
     public function transactions()
     {
         return $this->hasMany(Transaction::class);
+    }
+
+    public function getPriceAttribute()
+    {
+        return $this->cost . config('setting.vnd');
     }
 }

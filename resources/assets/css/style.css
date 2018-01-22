@@ -15,7 +15,6 @@ body{
     color: #FE980F;
     text-decoration: none;
 }
-
 #register-box{
     margin-top: 100px;
 }
@@ -36,7 +35,6 @@ body{
     background: #FE980F;
     border: 0px;
 }
-
 #register-box input{
     border-radius: 0px;
 }
@@ -105,18 +103,15 @@ body{
     text-transform: initial;
     font-size: 13px;
 }
-
 .user-detail ul li i{
     padding-right: 10px;
 }
 .form-control {
     border-radius: 0px;
 }
-
 #profile-box{
     border: 1px solid #f1f1f1;
 }
-
 #profile-box .form-group{
     padding-left: 20px;
     padding-right: 20px;
@@ -185,7 +180,6 @@ h5{
     color: #696763;
     border-right: 1px solid #ffffff;
 }
-
 .table-bordered thead tr th{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -218,7 +212,6 @@ h5{
 .panel-primary .panel-body ul li{
     border-bottom: 1px solid #f1f1f1;
 }
-
 /* left-sidebar */
 .left-sidebar .panel-body{
     padding: 15px 15px 15px 0px;
@@ -239,14 +232,12 @@ h5{
     clear:both;
     text-transform: capitalize;
 }
-
 .vertical-nav li a {
     text-decoration:none;
     color: #666 !important;
     text-transform: capitalize !important;
     font-size: 13px !important;
 }
-
 .vertical-nav ul li ul {
     display:none;
     list-style-type:none;
@@ -266,7 +257,6 @@ h5{
     text-decoration:underline;
     color: #666;
 }
-
 .vertical-nav li ul {
     display: none;
     margin-top: 10px;
@@ -275,14 +265,12 @@ h5{
 .vertical-nav li:hover ul {
     display: block;
 }
-.vertical-nav li:hover .sub-menu
-{
-    position: relative;   
+.vertical-nav li:hover .sub-menu {
+    position: relative;
     margin-top: -53.5px;
     margin-left: 9px;
 }
-.sub-menu li
-{
+.sub-menu li {
     position: relative;
     display: block;
     top: 0;
@@ -293,8 +281,7 @@ h5{
     z-index:1;
     background: #ffffff;
 }
-.sub-menu li a
-{
+.sub-menu li a {
     display:inline-block;
     padding: 0 10px;
 }
@@ -326,7 +313,7 @@ h5{
     font-size: 16px;
     font-weight: 500;
     color: #666663;
-    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 .card-info div{
@@ -334,7 +321,6 @@ h5{
     float: left;
     padding: 10px 10px 10px 10px;
 }
-
 .card-number-uploads{
     height: 150px;
     width: 150px;
@@ -362,7 +348,6 @@ h5{
     text-align: left !important;
     padding-top: 5px;
 }
-
 .info i.fa{
     width: 20px;
 }
@@ -409,48 +394,107 @@ h5{
 .friend-email>i{
     width: 20px;
 }
-.friend-phone>i{
+.friend-phone>i {
     width: 20px;
 }
-.friend-options>.dropdown>.dropdown-toggle>i.fa{
+.friend-options>.dropdown>.dropdown-toggle>i.fa {
     width: 20px;
 }
-.paginate-bar{
+.paginate-bar {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.no-request h5{
+.no-request h5 {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
 }
-.document-title h5{
+.document-title h5 {
     text-align: left;
     font-size: 20px;
     text-transform: capitalize;
     color: #333;
 }
-.document-more-detail div{
+.document-more-detail div {
     display: inline;
     padding-right: 30px;
 }
-.document-statistic div{
+.document-statistic div {
     display: inline;
     padding-right: 30px;
 }
-.viewer-pdf{
+.viewer-pdf {
     margin-bottom: 20px;
 }
-.document-options div{
+.document-options div {
     display: inline;
     padding-right: 20px;
 }
-.document-options{
+.document-options {
     margin-bottom: 20px;
 }
 a{
     color: #FE980F;
 }
 .user-upload{
+    color: #FE980F;
+}
+.depoisit-header div {
+    padding-right: 10px;
+    float: left;
+}
+.depoisit-header .title h5 {
+    line-height: 0.5;
+}
+.type-depoisit {
+    margin-top: 10px;
+}
+.type-depoisit div {
+    display: inline;
+    margin-right: 5px;
+}
+.viettel {
+    border: 2px solid #c90808;
+    padding: 30px 13px 30px 13px;
+}
+.atm {
+    border: 2px solid #c1c1c1;
+    padding: 30px 13px 30px 13px;
+}
+.atm:hover {
+    border: 2px solid #c90808;
+}
+.table-cost{
+    margin-top: 20px;
+}
+.table-cost .table-bordered thead tr th {
+    text-align: center;
+}
+.table-cost .table-bordered tbody tr td {
+    text-align: center;
+}
+.form-depoisit {
+    margin-top: 20px;
+    padding-left: 50px;
+    border-left: 1px solid #c1c1c1;
+    padding-bottom: 10px;
+}
+.title-support-dep {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -20px;
+}
+.form form div {
+    margin-bottom: 10px;
+}
+.form form div label {
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.line {
+    margin-top: -7px;
+}
+.btc-icon .fa-btc {
     color: #FE980F;
 }

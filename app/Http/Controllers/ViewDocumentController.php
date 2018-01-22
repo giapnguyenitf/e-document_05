@@ -7,13 +7,17 @@ use App\Models\Category;
 use App\Models\Document;
 use App\Models\Favorite;
 use App\Models\User;
+use App\Models\History;
 use Illuminate\Support\Facades\DB;
+use App\Traits\SaveHistoryTrait;
 use Auth;
 use Storage;
 use Session;
 
 class ViewDocumentController extends Controller
 {
+    use SaveHistoryTrait;
+
     public function __construct()
     {
         return $this->middleware('auth');
@@ -32,6 +36,7 @@ class ViewDocumentController extends Controller
             $document = Document::where('id', $id)->get()->first();
             $document->views ++;
             $document->save();
+            $history = $this->addViewHistory($document->id);
     
             return view('viewDocument', compact('categories', 'document', 'favorites'));
         } catch(\Exception $e) {
@@ -85,6 +90,7 @@ class ViewDocumentController extends Controller
                     $user->save();
                     $document->downloads ++;
                     $document->save();
+                    $this->addDownloadHistory($document->id);
     
                     return response()->download($document->download_link);
                 }
@@ -93,6 +99,7 @@ class ViewDocumentController extends Controller
                     $user->save();
                     $document->downloads ++;
                     $document->save();
+                    $this->addDownloadHistory($document->id);
     
                     return response()->download($document->download_link);
                 }
