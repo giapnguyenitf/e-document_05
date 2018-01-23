@@ -536,3 +536,7 @@ a{
     background: transparent;
     color: #c90808;
 }
+#bt-search {
+    background: transparent;
+    border: 0px;
+}
