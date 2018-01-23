@@ -8,44 +8,8 @@
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <div class="features_items">
-                            <!--features_items-->
-                            <h2 class="title text-center">@lang('label.new_documents')</h2>
-                            @foreach ($newDocuments as $newDocument)
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <a class="product_thumbnail" href="{{ route('viewDocument', $newDocument->id) }}">
-                                                    <img title="{{ $newDocument->name }}" class="img-responsive" src="{{ $newDocument->thumbnail_path }}" />
-                                                </a>
-                                                <a title="{{ $newDocument->name }}" class="product_name" href="{{ route('viewDocument', $newDocument->id) }}">
-                                                    <h5>{{ $newDocument->name }}</h5>
-                                                </a>
-                                            </div>
-                                            <div class="choose">
-                                                <ul class="nav nav-pills nav-justified">
-                                                    <li>
-                                                        <a href="#"><i class="fa fa-file"></i>{{ $newDocument->file_type }}</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fa fa-eye"></i>{{ $newDocument->views }}</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="fa fa-cloud-download"></i>{{ $newDocument->downloads }}</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-md-12 all_items">
-                            <h2 class="title text-center">@lang('label.all_documents')</h2>
+                            <h2 class="title text-center">@lang('label.search_result')</h2>
                             <div class="document_item">
                             @foreach ($documents as $document)
                                 <div class="row items">

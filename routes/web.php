@@ -21,6 +21,8 @@ Route::get('/category/{id}', 'CategoryDocumentController@index')->name('category
 
 Route::get('info/{id}', 'ShowUserController@index')->name('showUser');
 
+Route::get('document', 'SearchController@index')->name('search');
+
 Route::prefix('get')->group(function () {
     Route::get('categories', 'AjaxController@getCategories');
     Route::get('request-friend', 'AjaxController@getRequestFriend');

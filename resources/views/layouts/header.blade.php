@@ -70,12 +70,14 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="search-box">
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="search" id="search" placeholder="Search">
-                            <span class="input-group-addon">
-                                <a href=""><i class="fa fa-search"></i></a>
-                            </span>
-                        </div>
+                        {{ Form::open(['route' => 'search', 'method' => 'GET', 'role' => 'search']) }}
+                            <div class="input-group">
+                                {{ Form::text('search', null, ['class' => 'form-control', 'id' => 'search', 'placeholder' => trans('label.search'), 'cols' => 30 ]) }}
+                                <span class="input-group-addon">
+                                    {{ Form::button('<i class="fa fa-search"></i>', ['type' => 'submit', 'id' => 'bt-search']) }}
+                                </span>
+                            </div>
+                        {{ Form::close() }}
                     </div>
                 </div>
                 <div class="col-sm-3">

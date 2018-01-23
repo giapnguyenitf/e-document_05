@@ -81,5 +81,7 @@
         'depoisit' => 'Depoisit',
         'comment' => 'Comment',
         'delete_document' => 'Delete document',
+        'search' => 'Search',
+        'search_result' => 'Search result',
     ];
 ?>
