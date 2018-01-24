@@ -13,10 +13,12 @@ class ChangeFieldToTableCoins extends Migration
      */
     public function up()
     {
-        $table->integer('coins_receive');
-        $table->renameColumn('cost_per_coin', 'cost');
-        $table->integer('cost')->change();
-        $table->integer('type');
+        Schema::table('coins', function (Blueprint $table) {
+            $table->integer('coins_receive');
+            $table->renameColumn('cost_per_coin', 'cost');
+            $table->integer('cost_per_coin')->change();
+            $table->integer('type');
+        });
     }
 
     /**
@@ -26,9 +28,11 @@ class ChangeFieldToTableCoins extends Migration
      */
     public function down()
     {
-        $table->dropColumn('coins_receive');
-        $table->dropColumn('type');
-        $table->renameColumn('cost', 'cost_per_coin');
-        $table->float('cost_per_coin')->change();
+        Schema::table('coins', function (Blueprint $table) {
+            $table->dropColumn('coins_receive');
+            $table->dropColumn('type');
+            $table->renameColumn('cost', 'cost_per_coin');
+            $table->float('cost_per_coin')->change();
+        });
     }
 }
