@@ -1,0 +1,53 @@
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #666;
+}
+a:hover {
+    color: #FE980F;
+}
+.list-document {
+    margin-top: 20px;
+}
+.table > thead > tr > td.active, .table > thead > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th{
+    background-color: #FE980F;
+    color: #ffffff;
+}
+.viewer-pdf {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-responsive {
+    max-height: 234px;
+}
+.replace-thumbnail {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.form-control {
+    border-radius: 0px;
+}
+.parent_category {
+    margin-bottom: 10px;
+}
+.change .panel-primary{
+    border-radius: 0px;
+    border: 1px solid #FE980F;
+}
+.change .panel-primary .panel-heading {
+    background: #FE980F;
+    border-bottom: 0px;
+    padding: 3px 15px 3px 15px;
+    border-radius: 0px;
+}
+.form-censor-document {
+    display: none;
+}
+.category-row {
+    margin-top: 20px;
+}
+#bt-add-new {
+    margin-top: 10px;
+}

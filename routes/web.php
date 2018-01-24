@@ -27,6 +27,9 @@ Route::prefix('get')->group(function () {
     Route::get('categories', 'AjaxController@getCategories');
     Route::get('request-friend', 'AjaxController@getRequestFriend');
     Route::get('comments/{id}', 'AjaxController@getComments');
+    Route::get('document/{id}', 'AjaxController@getDocument');
+    Route::get('all-categories', 'AjaxController@getAllCategories');
+    Route::get('sub-categories/{id}', 'AjaxController@getSubCategories');
 });
 
 Route::prefix('post')->group(function () {
@@ -56,4 +59,15 @@ Route::prefix('document')->group(function () {
     Route::get('favorites/{id}', 'ViewDocumentController@favorites')->name('favoritesDocument');
     Route::get('unfavorites/{id}', 'ViewDocumentController@unFavorites')->name('unFavoritesDocument');
     Route::get('download/{id}', 'ViewDocumentController@download')->name('downloadDocument');
+});
+
+
+
+Route::prefix('admin')->group(function () {
+    Route::resource('censored-document', 'Admin\CensoredDocumentController');
+    Route::resource('censor-document', 'Admin\CensorDocumentController');
+    Route::get('/dashboard', 'Admin\DashboardController@index')->name('admin.index');
+    Route::get('/accept/{id}', 'Admin\AcceptDocumentController@accept')->name('admin.acceptDocument');
+    Route::resource('add-category', 'Admin\CategoryController');
+    Route::resource('add-subCategory', 'Admin\SubcategoryController');
 });

@@ -24,5 +24,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .copy('resources/assets/js/upload.js', 'public/js')
    .copy('resources/assets/js/home.js', 'public/js')
    .copy('resources/assets/js/comment.js', 'public/js')
-   .copy('resources/assets/js/master.js', 'public/js');
-   
+   .copy('resources/assets/js/master.js', 'public/js')
+   .copy('resources/assets/js/metisMenu.min.js', 'public/js')
+   .copy('resources/assets/js/sb-admin-2.min.js', 'public/js')
+   .copy('resources/assets/js/censor-document.js', 'public/js');
