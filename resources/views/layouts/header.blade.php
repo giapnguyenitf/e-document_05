@@ -105,6 +105,9 @@
                                         </ul>
                                     @else
                                         <ul class="dropdown-menu">
+                                            @if (Auth::user()->is_admin)
+                                                <li class="dropdown-item"><a href="{{ route('admin.index') }}"><i class="fa fa-university" aria-hidden="true"></i> @lang('label.dashboard')</a></li>
+                                            @endif
                                             <li class="dropdown-item"><a href="{{ route('document.index') }}"><i class="fa fa-cloud-upload" aria-hidden="true"></i> @lang('common.upload')</a></li>
                                             <li class="dropdown-item"><a href="{{ route('profile.index') }}"><i class="fa fa-info-circle" aria-hidden="true"></i> @lang('common.account_info')</a></li>
                                             <li class="dropdown-item"><a href="{{ route('user.depoisit') }}"><i class="fa fa-btc" aria-hidden="true"></i> @lang('label.buy_coins')</a></li>

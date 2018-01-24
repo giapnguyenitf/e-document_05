@@ -22,6 +22,7 @@
     @include('layouts.footer')
     {{ Html::script('js/jquery.js') }}
     {{ Html::script('js/bootstrap.js') }}
+    {{ Html::script('js/upload.js') }}
     @yield('javascript')
 </body>
 </html>

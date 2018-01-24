@@ -15,7 +15,7 @@ class CategoryDocumentController extends Controller
             ['status', '=', config('setting.true')],
         ])->orderBy('name', 'asc')->get();
 
-        $documents = Document::where('category_id', $categoryId)->orderBy('created_at', 'desc')->paginate(config('setting.number_per_page'));
+        $documents = Document::where('category_id', $categoryId)->where('status', config('setting.true'))->orderBy('created_at', 'desc')->paginate(config('setting.number_per_page'));
 
         $newDocuments = Document::where([
             ['status', config('setting.true')],

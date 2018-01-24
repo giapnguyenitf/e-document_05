@@ -62,4 +62,27 @@ class AjaxController extends Controller
             ]);
         }
     }
+
+    public function getDocument($id)
+    {
+        $document = Document::where('id', $id)->with('category')->get()->first();
+
+        return Response::json($document);
+    }
+
+    public function getAllCategories()
+    {
+        $categories = Category::with('subCategories')->where([
+            ['parent_id', '=', config('setting.null')],
+        ])->orderBy('name', 'asc')->get();
+
+        return Response::json($categories);
+    }
+
+    public function getSubCategories($parent_id)
+    {
+        $subCategories = Category::where('parent_id', $parent_id)->get();
+
+        return Response::json($subCategories);
+    }
 }
