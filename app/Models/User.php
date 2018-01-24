@@ -66,4 +66,9 @@ class User extends Model
     {
         return Storage::url(config('setting.avatar_path'). $this->avatar);
     }
+
+    public function isAdmin()
+    {
+        return $this->is_admin;
+    }
 }

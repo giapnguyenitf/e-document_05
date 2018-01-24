@@ -12,6 +12,11 @@ use Auth;
 class ShowUserController extends Controller
 {
     use FriendshipsTrait;
+
+    public function __construct()
+    {
+        return $this->middleware('auth');
+    }
     public function index($id)
     {
         if ($id == Auth::user()->id) {
